@@ -1,0 +1,97 @@
+class Feedable():
+  sounds = str()
+  name = str()
+  weight = int()
+  resource_type = str()
+  resource_enabled = bool()
+  names = dict()
+  def info(self):
+    self.name = input(str)
+    self.weight = input(int)
+    return
+  def feed(self):
+    self.eat = True
+    return
+  def take(self, self.resource_type):
+   if (self.resource_enabled == True):
+    self.resource_enabled = False
+   if (resource_type == 'eggs'):
+     print('Яйца собраны')
+   if (resource_type = 'milk'):
+     print('Молоко получено')
+   if (resource_type = 'wool'):
+     print('Шерсть срезана')
+
+  def info(self)
+    self.name = input(str)
+    self.weight = input(int)
+    names[self.name] = self.weight
+    summ += self.weight
+    if(self.weight > max_weight):
+      max_weight = self.weight
+
+  
+ class ducks:
+    sounds = 'Кря'
+    resource_type = 'eggs'
+  kriakva = ducks()
+  info(kriakva)
+  
+  
+  class chickens:
+    sounds = 'Кукареку'
+    resource_type = 'eggs'  
+  koko = chickens()
+  info(koko)
+
+  kukareku = chickens()
+  info(kukareku)
+
+  class guse:
+    sounds = 'Кря'
+    resource_type = 'eggs'  
+  white = guse()
+  info(white)
+
+  grey = guse()
+  info(grey)
+  
+  class cows:
+    sounds = 'Муу'
+    resource_type = 'milk'  
+  manka = cows()
+  info(manka)
+   
+  class goats:
+    sounds = 'Бее'
+    resource_type = 'milk'  
+  horns = goats()
+  info(horns)
+
+  hooves = goats()
+  info(hooves)
+  
+  class sheep:
+    resource_type = 'wool'  
+    sounds = 'Бебебе'
+  sheepy = sheep()
+  info(sheepy)
+
+  curly = sheep()
+  info(curly)
+  
+
+
+
+
+     
+
+
+
+
+        
+
+
+
+      
+    
