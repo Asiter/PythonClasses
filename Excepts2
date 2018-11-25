@@ -1,0 +1,10 @@
+while True:
+  number = input(int)
+
+  try:
+
+    assert(int(number) >= 0)
+
+  except AssertionError:
+
+    print('Ваше число отрицательное!')
