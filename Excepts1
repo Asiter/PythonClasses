@@ -1,0 +1,34 @@
+operation = input(int)
+
+numbers = operation.split(" ")
+
+answer = int
+
+print(numbers)
+
+if '+' in numbers:
+
+  answer = int(numbers[1]) + int(numbers[2])
+
+if '-' in numbers:
+
+  answer = int(numbers[1]) - int(numbers[2])
+
+if '*' in numbers:
+
+  answer = int(numbers[1]) * int(numbers[2])
+
+if '/' in numbers:
+
+  try:
+
+    answer = int(numbers[1]) / int(numbers[2])
+
+  except ZeroDivisionError:
+
+    print('Нельзя делить на ноль!')
+
+print(answer)
+
+
+
