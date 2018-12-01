@@ -1,0 +1,42 @@
+operation = input(int)
+
+numbers = operation.split(" ")
+
+i = 1
+
+while i <= 2:
+  try:  
+    assert(int(numbers[i]) >= 0)
+
+    answer = int
+
+    if i == 2:
+
+      if '+' in numbers:
+
+        answer = int(numbers[1]) + int(numbers[2])
+
+      if '-' in numbers:
+
+        answer = int(numbers[1]) - int(numbers[2])
+
+      if '*' in numbers:
+
+        answer = int(numbers[1]) * int(numbers[2])
+
+      if '/' in numbers:
+
+        try:
+
+          answer = int(numbers[1]) / int(numbers[2])
+
+        except ZeroDivisionError:
+
+          print('Нельзя делить на ноль!')
+
+    print(answer)
+
+  except AssertionError:  
+    print('Ваше число отрицательное!')
+    break
+  i += 1
