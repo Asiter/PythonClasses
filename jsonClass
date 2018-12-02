@@ -1,0 +1,26 @@
+import json
+
+from collections import Counter
+
+news_final = list()
+
+i = 0
+
+new = str()
+
+with open('files/newsafr.json') as datafile:
+  json_data = json.load(datafile)
+
+while i < len(json_data['rss']['channel']['items']) - 1: 
+  news = json_data['rss']['channel']['items'][i]['description']
+  news_list = news.split(' ')
+  for new in news_list:
+    if len(new) > 6:
+      news_final.append(new)
+  i =+ 1
+
+news_final.sort()
+
+result = Counter(news_final).most_common(10)
+
+print(result)
