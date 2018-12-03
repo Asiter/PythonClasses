@@ -1,0 +1,28 @@
+import time
+
+class Timer:
+    def __init__(self, name):
+        self.name = name
+
+    def __enter__(self):
+        self.start = time.time()
+        print('Выполнение началось в', self.start)
+
+    def __exit__(self, *args):
+        self.end = time.time()
+        self.interval = self.end - self.start
+        print('Выполнение закончилось в' ,self.end)
+        print('Выполнение заняло', self.interval)
+        return False
+
+with Timer as t:
+  num = list()
+  x = int()
+  max1 = int()
+  for i in range(0, 29, 1):
+    x = input()
+    if x > max1:
+      num.append(x)
+      x = max1
+  print(num)
+  print(t)
